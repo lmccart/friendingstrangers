@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+ 	height: 100%;
+  	margin: 0 auto -1.25em;
+}
+
+
+body, html {
+	font: 0.9em monospace, 'CaeciliaLTStd55Roman', Helvetica, Arial, sans-serif;
+	text-align: left;
+	padding: 0px;
+	/*overflow: hidden;*/
+	height: 100%;
+	color: #404040;
+	padding: 10px;
+}
+
+body {
+	overflow: hidden;
+	margin: 0;
+}
+
+.textfield {
+	color: #333333;
+	background: #F7F7F7;
+	border: 1px solid #CCCCCC;
+	padding-left: 1px;
+}
+
+a, .clickable, .clickable_who_else, button {
+	color: rgba(40, 40, 40, 1.0);
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	background-color:none;
+	text-align: center  !important;
+	text-decoration:underline;
+	font: 1.0em 'CaeciliaLTStd55Roman', Helvetica, Arial, sans-serif !important;
+	background: none !important;
+}
+
+button {
+	text-decoration: none !important;
+}
+
+
+ul .opts a, ul .opts .clickable, ul .opts button, .opts, #flipbook a {
+	text-decoration: none !important;
+}
+
+.clickable_who_else, .who_else {
+	color: rgba(115, 189, 216, 0.75);
+}
+
+
+a:hover, .clickable:hover, button:hover, .clickable_who_else:hover, .who_else:hover {
+	color: #CCCCCC;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+th {
+	font-weight: normal;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+#menu {
+	padding: 0;
+	list-style: none;
+	position:fixed;
+}
+
+#header, #footer {
+	margin: 0 0 0 2em;
+}
+
+#header {
+	padding-top: 2em;
+}
+
+#menu li {
+	float: left;
+	padding-right: 0.3em;
+}
+
+
+
+ul .opts {
+	padding: 0;		
+	z-index:10;
+	position:absolute;
+	//background: #ddd;
+	margin: 1px;	
+}
+
+
+ul li .opts {
+	display: normal;
+}
+
+#menu li ul .opts {
+	display: block;
+}
+
+#menu li ul {
+	display: none;
+}
+
+
+
+#content {
+	text-align: center;
+	width: 100%;
+}
+
+
+/* TEXT PAGES */
+#text-inner {
+	outline: #CCCCCC solid 1px;
+	text-align: center;
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+
+#text p {
+	margin-bottom: 1em;
+	padding: 2em;
+}
+
+#text table {
+	width: auto;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+#text table input .tab {
+	color: #FFFFFF;
+	border: none;
+	text-decoration:underline !important;
+	cursor: pointer;
+	padding: 0;
+	background-color:none;
+	text-align: center  !important;
+	font: 1.0em 'CaeciliaLTStd55Roman', Helvetica, Arial, sans-serif !important;
+	background: #404040;
+	
+}
+
+/* FLIPBOOK */
+#flipbook {
+	padding: 0;
+	list-style: none;
+}
+
+
+#flipbook li, li {
+	display: inline;
+}
+
+#flipbook .details {
+	display: none;
+	position: fixed;
+	padding: 0;		
+	z-index:1;
+	background:rgba(255,255,255,0.75);
+	text-align: center;
+	
+}
+
+
+#flipbook img  {
+	opacity:0.25;
+}
+
+#flipbook p {
+	text-align: center;
+}
+
+
+#flipbook .username {
+	font-size: 1.2em;
+	padding: 1em;
+	text-decoration:underline;
+	
+}
+
+img.value {
+	width: 5em;
+	height: 5em;
+	padding-bottom: 1em;
+}
+
+
+
+img.flip {
+	width: 640px;
+	height: 480px;
+}
+
+#flipbook .note {
+	font-size: 1.8em;
+}
+
+#flipbook .timestamp {
+	font-size: 1.2em;
+	padding: 1em 0 1em 0;
+}
+
+#flipbook .details {
+	padding: 1em;
+}
+
+
+#flipbook a:hover {
+	color: #404040;
+}
+
+
+/* TIMELINE */
+.timeline_small {
+	text-align: center;
+	padding: 1em 1em 1em 1em;
+	color: #404040;
+	font: 1em 'CaeciliaLTStd55Roman', Helvetica, Arial, sans-serif;
+}
+
+
+.timeline_small img {
+	width: 10em;
+	height: 7.5em;
+}
+
+.timeline_small .username {
+	text-decoration:underline;
+	padding-bottom: 1em;
+}
+
+.timeline_small .note, .timeline_small .location {
+	padding-bottom: 1em;
+}
+
+.timeline_small p {
+	width: 10em;
+	white-space: normal;
+}
+
+img.value_small {
+	width: 3em;
+	height: 3em;
+	padding-bottom: 1em;
+}
+
+
+/* FOOTER */
+#footer, .push {
+	height: 1.25em;
+}
+
+#footer {
+	position: fixed;
+}
+
+.tab {
+	background-color: #404040;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.tab a {
+	color: #FFFFFF;
+	text-decoration: none !important;
+}
+
+
+/* FONT */
+@font-face {
+	font-family: 'CaeciliaLTStd55Roman';
+	src: url('CaeciliaLTStd-Roman.eot');
+	src: local('Caecilia LT Std'), local('CaeciliaLTStd-Roman'), url('CaeciliaLTStd-Roman.woff') format('woff'), url('CaeciliaLTStd-Roman.ttf') format('truetype');
+}
+
